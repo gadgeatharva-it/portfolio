@@ -1,794 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>My site</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta property="og:title" content="Page Tile" />
-  <meta property="og:description" content="Personal Site" />
-
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="css/animate.css" />
-  <link rel="icon" href="images/hello.png" />
-
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css" />
-  <link rel="stylesheet" href="css/aos.css" />
-  <link rel="stylesheet" href="css/flaticon.css" />
-  <link rel="stylesheet" href="css/icomoon.css" />
-  <link rel="stylesheet" href="css/style.css" />
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atharva Gadge | Portfolio</title>
+  <meta name="description" content="Portfolio of Atharva Gadge, an IT student focused on data science, machine learning, analytics, and web development.">
+  <meta property="og:title" content="Atharva Gadge | Portfolio">
+  <meta property="og:description" content="IT student portfolio featuring projects, skills, education, certifications, and contact details.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="main.png">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
-    id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Atharva Gadge</a>
-      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home-section" aria-label="Atharva Gadge home">Atharva Gadge</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item">
-            <a href="#home-section" class="nav-link"><span>Home</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#about-section" class="nav-link"><span>About</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#resume-section" class="nav-link"><span>Education</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#project-section" class="nav-link"><span>Projects</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact-section" class="nav-link"><span>Contact</span></a>
-          </li>
-        </ul>
-      </div>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#home-section">Home</a>
+        <a href="#about-section">About</a>
+        <a href="#resume-section">Education</a>
+        <a href="#project-section">Projects</a>
+        <a href="#contact-section">Contact</a>
+      </nav>
     </div>
-  </nav>
-
-  <!-- particles -->
-  <div id="particles-js"></div>
-
-  <section class="hero-wrap js-fullheight" id="home-section">
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-        <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-          <div class="text text-center">
-            <span class="subheading">Hey! I am</span>
-            <h1>Atharva Gadge</h1>
-            <h2>
-              I like
-              <span class="txt-rotate" data-period="2000"
-                data-rotate='[ "Coding.", "Data Science", "Machine Learning", "Data Analytics", "Web Dev."]'></span>
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="scrollDown">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-    </div>
-    <div class="glyphicon glyphicon-arrow-down"></div>
-
-  </section>
-
-
-  <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-    <div class="container">
-      <div class="row d-flex no-gutters">
-        <div class="col-md-6 col-lg-6 d-flex">
-          <div class="img-about img d-flex align-items-stretch">
-            <div class="overlay"></div>
-
-            <!-- Wrapper added here -->
-            <div style="position: relative; display: inline-block;">
-              <div class="img d-flex align-self-stretch align-items-center" style="background-image: url(main.png);
-              width: 400px;
-              height: 400px;
-              border-radius: 50%;
-              background-size: cover;
-              background-position: center;">
-              </div>
-
-              <!-- Open to Work Badge -->
-              <div style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);">
-                <span
-                  style="display:inline-flex;align-items:center;gap:7px;background:#f0a500;color:#1a1a1a;padding:7px 18px;border-radius:20px;font-size:13px;font-weight:600;font-family:sans-serif;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.4);">
-                  <span
-                    style="width:8px;height:8px;border-radius:50%;background:#1a1a1a;flex-shrink:0;animation:pulse 1.5s infinite;"></span>
-                  Open to Work
-                </span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 pl-md-5 py-5">
-          <div class="row justify-content-start pb-3">
-            <div class="col-md-12 heading-section ftco-animate">
-              <h2 class="mb-4">About Me</h2>
-              <p>Here's a little about me</p>
-              <ul class="about-info mt-4 px-md-0 px-2">
-                <li class="d-flex"><span>Name:</span><span>Atharva Gadge</span></li>
-                <li class="d-flex">
-                  <span>Email:</span><span>gadgeathu07@gmail.com</span>
-                </li>
-                <li class="d-flex">
-                  <span>Phone:</span><span>+91 7875494909</span>
-                </li>
-                <li class="d-flex">
-                  <span>Country:</span> <span>India</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-            <div class="text">
-              <p>
-                <a href="" class="btn btn-primary py-3 px-3">Download CV</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="about-description">
-    <p style="text-align: center;">
-      I am a IT student and a passionate Data Science and Machine Learning learner.
-      I enjoy working with data, building machine learning models, and developing web applications.
-      I have skills in Python, Data Analysis, Machine Learning, HTML, CSS, JavaScript, PHP, and MySQL.
-      I am always eager to learn new technologies and work on real-world projects to improve my skills.
-      My goal is to become a Data Scientist and Machine Learning Engineer.
-    </p>
-  </div>
-
-  <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <nav id="navi">
-            <ul>
-              <li><a href="#page-1">Education</a></li>
-
-              <li><a href="#page-3">Skills</a></li>
-              <li><a href="#page-4">Certifications</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-md-9">
-          <div id="page-1" class="page one">
-            <h2 class="heading">Education</h2>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-graduation-cap"></span>
-              </div>
-              <div class="text pl-3">
-                <h2>Dr. Babasaheb Ambedkar technological University </h2>
-                <span class="position">Bachelor of technology</span>
-                <p><strong>Infromation technology</strong></p>
-                <p>Maharashtra-India</p>
-                <span class="date">2023-2027(October)</span>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="flaticon-book"></span>
-              </div>
-              <div class="text pl-3">
-                <h2>R.J Chaware Junior College</h2>
-                <span class="position">Intermediate</span>
-                <p><strong>Class 11th and 12th</strong></p>
-                <p>Maharashtra</p>
-                <span class="date">2021-2022</span>
-              </div>
-            </div>
-            <div class="resume-wrap d-flex ftco-animate">
-
-
-            </div>
-          </div>
-
-
-          <div id="page-3" class="page three">
-
-            <section style="padding:80px; background:#242424; color:white;">
-
-              <h1 style="text-align:center; margin-bottom:50px; font-size:40px;">My Skills</h1>
-
-              <div
-                style="display:flex; gap:40px; justify-content:center; flex-wrap:wrap; max-width:1800px; margin:auto;">
-
-                <!-- Programming Card -->
-                <div style="width:600px; background:#0f172a; padding:40px; border-radius:15px; 
-                    box-shadow:0 0 25px rgba(0,0,0,0.6); border:1px solid #1e293b;">
-
-                  <h2 style="margin-bottom:25px; color:#22c55e;">Programming & Core</h2>
-
-                  <div style="margin-bottom:25px;">
-                    Python <span style="float:right;">85%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="85%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#22c55e,#4ade80); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div style="margin-bottom:25px;">
-                    SQL <span style="float:right;">65%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="65%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#22c55e,#4ade80); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    Java <span style="float:right;">70%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="70%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#22c55e,#4ade80); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Data Science Card -->
-                <div style="width:600px; background:#0f172a; padding:40px; border-radius:15px; 
-                    box-shadow:0 0 25px rgba(0,0,0,0.6); border:1px solid #1e293b;">
-
-                  <h2 style="margin-bottom:25px; color:#38bdf8;">Data Science & ML</h2>
-
-                  <div style="margin-bottom:25px;">
-                    Machine Learning <span style="float:right;">75%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="75%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#38bdf8,#60a5fa); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div style="margin-bottom:25px;">
-                    Scikit-learn <span style="float:right;">70%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="70%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#38bdf8,#60a5fa); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    NLP <span style="float:right;">60%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="60%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#38bdf8,#60a5fa); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Tools Card -->
-                <div style="width:600px; background:#0f172a; padding:40px; border-radius:15px; 
-                    box-shadow:0 0 25px rgba(0,0,0,0.6); border:1px solid #1e293b;">
-
-                  <h2 style="margin-bottom:25px; color:#f59e0b;">Data Tools</h2>
-
-                  <div style="margin-bottom:25px;">
-                    Pandas / NumPy <span style="float:right;">80%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="80%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#f59e0b,#fbbf24); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div>
-                    Power BI <span style="float:right;">80%</span>
-                    <div style="background:#1e293b; height:12px; border-radius:10px;">
-                      <div class="skillbar" data-width="80%"
-                        style="height:12px; width:0%; background:linear-gradient(to right,#f59e0b,#fbbf24); border-radius:10px;">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </section>
-            <!-- Skill Section -->
-            <!-- Row 1 -->
-            <h2 class="heading">Technologies</h2>
-            <div class="row mb-4 ftco-animate">
-
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/Numpy.png" title="Numpy" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/pandas.png" title="pandas" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/sklearn.png"
-                  title="sklearn" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/tensor.jpeg"
-                  title="tensorflow" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/github.png" title="github" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/git.png" title="git" />
-              </div>
-            </div>
-            <div class="row mb-4 ftco-animate">
-
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/html.png" title="HTML" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/css.png" title="CSS" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/javascript.png" title="JavaScript" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/bootstrap.png" title="Bootstrap" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/cplusplus.png" title="C++" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/c.png" title="C" />
-              </div>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="row mb-4 ftco-animate">
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/linux.png" title="Linux" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/dart.png" title="Dart" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/flutter.png" title="Flutter" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" src="images/skills/java.png" title="Java" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/python.webp" title="python" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/mysql.png" title="python" />
-              </div>
-            </div>
-            <div class="row mb-4 ftco-animate">
-
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/react.png" title="react" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/django.png" title="django" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/docker.png" title="docker" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/photoshop.png" title="ps" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/sql.png" title="sql" />
-              </div>
-              <div class="col">
-                <img class="img-fluid grow" height="44px" width="44px" src="images/skills/powerbi.jpeg"
-                  title="powerbi" />
-              </div>
-            </div>
-
-            <div id="page-4" class="page four">
-              <h2 class="heading">Certifications</h2>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-medal"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Google Data Analytics Certificate</h2>
-                  <span class="position"><strong>Google</strong></span>
-                  <span><strong> Google Career Certificates
-                    </strong></span>
-                  <p class="date">Nov 2025</p>
-
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-trophy"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Oracle Certified proffesional (Gen Ai)</h2>
-                  <span class="position"><strong>Oracle University</strong></span>
-                  <span><strong> - FAST NUCES</strong></span>
-                  <p class="date">Apr 2025</p>
-                </div>
-
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-trophy"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Data Analyst 101</h2>
-                  <span class="position"><strong>Microsoft</strong></span>
-                  <span><strong> - Simplelearn</strong></span>
-                  <p class="date">Aug 2025</p>
-                </div>
-              </div>
-              <div class="resume-wrap d-flex ftco-animate">
-                <div class="icon d-flex align-items-center justify-content-center">
-                  <span class="flaticon-trophy"></span>
-                </div>
-                <div class="text pl-3">
-                  <h2>Foundation course on IR4.0 Technologies</h2>
-                  <span class="position"><strong>AICTE</strong></span>
-                  <span><strong> - Microsoft and SAP</strong></span>
-                  <p class="date">2024-2025</p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <section class="ftco-section" id="project-section">
-    <div class="container-fluid px-md-5">
-      <div class="row justify-content-center py-5 mt-5">
-        <div class="col-md-12 heading-section text-center ftco-animate">
-          <h2 class="mb-4">Projects</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 text-center d-flex ftco-animate">
-          <a href="https://github.com/gadgeatharva-it/Data-Science-and-Analytics/tree/main/COVID19-Analysis/COVID19-India"
-            class="services-1 shadow">
-            <span class="icon">
-              <i class="fa-solid fa-chart-line"></i>
-            </span>
-            <div class="desc">
-              <h3 class="mb-4">COVID-19 INDIA DATA ANALYSIS & FORECASTING</h3>
-              <p><strong>Python • Pandas • Folium • Scikit-learn • Plotly</strong></p>
-              <p>
-                A data analytics project that analyzes the spread of
-                COVID-19 across Indian states using real-world data.
-                The system visualizes case density through interactive
-                maps, tracks confirmed, recovered, and death trends,
-                and forecasts future cases using Linear Regression.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 text-center d-flex ftco-animate">
-
-          <a href="https://github.com/gadgeatharva-it/Data-Science-and-Analytics/tree/main/Ecommerce%20analytics"
-            class="services-1 shadow">
-            <span class="icon">
-              <i class="fa-solid fa-cart-shopping"></i>
-
-            </span>
-            <div class="desc">
-              <h3 class="mb-4">ML ANALYSIS OF E-COMMERCE CONSUMER TRANSACTIONS</h3>
-              <p><strong>Python • Scikit-learn • XGBoost • ARIMA </strong></p>
-              <p>
-                A machine learning research project analyzing e-commerce
-                consumer behavior and sales dynamics. Applied K-Means clustering
-                for customer segmentation, Random Forest and XGBoost for purchase
-                prediction achieving 90%+ accuracy, and ARIMA for sales forecasting.
-                Published as a research paper at DBATU University.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-          <a href="https://github.com/gadgeatharva-it/web-development-projects/tree/main/Ai-chatbot" target="_blank"
-            class="services-1 shadow">
-            <span class="icon">
-              <i class="fa-solid fa-robot"></i>
-            </span>
-            <div class="desc">
-              <h3 class="mb-4">AI Chatbot</h3>
-              <p><strong>HTML • CSS • JavaScript • Web API • NLP</strong></p>
-              <p>
-                An AI chatbot built using API integration that generates intelligent responses to user queries in real
-                time.
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Handwritten Equation Solver -->
-        <div class="col-md-6 text-center d-flex ftco-animate">
-          <a class="services-1 shadow">
-            <span class="icon">
-              <i class="fa-solid fa-calculator"></i>
-            </span>
-            <div class="desc">
-              <h3 class="mb-4">Handwritten Equation Solver Using CNN</h3>
-              <p><strong>Python • Tensorflow/keras • OpenCV • CNN</strong></p>
-              <p>A deep learning based system that recognizes handwritten mathematical equations from images and solves
-                them using a Convolutional Neural Network (CNN). The system processes the image, extracts characters,
-                predicts symbols, and computes the final equation result.</p>
-            </div>
-          </a>
-        </div>
-
-        <!-- Library Management System -->
-        <div class="col-md-6 text-center d-flex ftco-animate">
-          <a href="https://github.com/gadgeatharva-it/web-development-projects/tree/main/lms" target="_blank"
-            class="services-1 shadow">
-            <span class="icon">
-              <i class="icon-book"></i>
-            </span>
-            <div class="desc">
-              <h3 class="mb-4">Library Management System</h3>
-              <p><strong>Html • Css • Js • php • Mysql</strong></p>
-              <p>Manages library books, students, and book issuing system through an admin dashboard.
-                Allows adding books, managing categories, issuing and returning books, and tracking records.
-                Built using PHP and MySQL with a complete login system and database integration.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-  </section>
-
-
-
-  <section id="contact-section">
-    <div class="row justify-content-center" style="max-width:1200px; margin:auto; margin-top:60px; align-items:center;">
-      <div class="col-md-12 heading-section text-center ftco-animate">
-        <h2 class="mb-4">Contact me</h2>
-      </div>
-
-      <!-- LEFT CONTACT CARDS -->
-      <div class="col-md-7">
-        <div class="row">
-
-          <!-- Contact Number -->
-          <div class="col-md-4" style="margin-bottom:20px;">
-            <div
-              style="background:#1c1c1c; border-radius:15px; padding:30px; text-align:center; box-shadow:0 0 15px rgba(0,0,0,0.5); height:100%;">
-
-              <div
-                style="width:70px; height:70px; background:orange; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 15px auto; font-size:24px; color:black;">
-                <span class="icon-phone2"></span>
-              </div>
-
-              <h5 style="margin-bottom:10px;">Phone</h5>
-              <p style="color:#bbb; font-size:14px;">+91 7875494909</p>
-
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div class="col-md-4" style="margin-bottom:20px;">
-            <div
-              style="background:#1c1c1c; border-radius:15px; padding:30px; text-align:center; box-shadow:0 0 15px rgba(0,0,0,0.5); height:100%;">
-
-              <div
-                style="width:70px; height:70px; background:orange; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 15px auto; font-size:24px; color:black;">
-                <span class="icon-paper-plane"></span>
-              </div>
-
-              <h5 style="margin-bottom:10px;">Email</h5>
-              <p style="color:#bbb; font-size:14px; word-break:break-all; line-height:20px;">
-                23030331246023@dbatu.ac.in
-              </p>
-
-            </div>
-          </div>
-
-          <!-- Website -->
-          <div class="col-md-4" style="margin-bottom:20px;">
-            <div
-              style="background:#1c1c1c; border-radius:15px; padding:30px; text-align:center; box-shadow:0 0 15px rgba(0,0,0,0.5); height:100%;">
-
-              <div
-                style="width:70px; height:70px; background:orange; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 15px auto; font-size:24px; color:black;">
-                <i class="fa fa-map-marker"></i>
-              </div>
-
-              <h5 style="margin-bottom:10px;">Location</h5>
-              <p style="color:#bbb; font-size:14px;">Maharashtra<br> India</p>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- RIGHT CONTACT FORM -->
-      <!-- RIGHT CONTACT FORM -->
-
-      <div class="col-md-5">
-        <div style="background:#e9e9e9; padding:30px; border-radius:15px; width:100%; margin-bottom:80px;">
-
-          <form name="submit-to-google-sheet">
-
-            <input name="name" type="text" placeholder="Your Name"
-              style="width:100%; padding:12px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc;" required>
-
-            <input name="email" type="email" placeholder="Your Email"
-              style="width:100%; padding:12px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc;" required>
-
-            <textarea name="message" placeholder="Message"
-              style="width:100%; height:120px; padding:12px; border-radius:6px; border:1px solid #ccc;"
-              required></textarea>
-
-            <button type="submit"
-              style="margin-top:15px; width:100%; background:orange; border:none; padding:14px; border-radius:30px; font-weight:bold;">
-              SEND MESSAGE
-            </button>
-
-          </form>
-
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <footer class="ftco-footer ftco-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">About</h2>
-            <p>I am a web developer and data science enthusiast who loves building dynamic websites and working with
-              data-driven technologies. I enjoy learning new tools, solving real-world problems, and continuously
-              improving my technical skills.</p>
-            <p class="mt-4"><u>Social Links</u></p>
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-              <li class="ftco-animate">
-                <a href="https://github.com/gadgeatharva-it" target="_blank"><span class="icon-github"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="https://www.linkedin.com/in/atharva-gadge-03a5b8309/" target="_blank"><span
-                    class="icon-linkedin-square"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="https://www.facebook.com/atharva.gadge.7773/"><span class="icon-facebook"></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="https://www.instagram.com/gadge_atharva07/" target="_blank"><span
-                    class="icon-instagram"></span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4 ml-md-4">
-            <h2 class="ftco-heading-2">Links</h2>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a>
-              </li>
-              <li>
-                <a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a>
-              </li>
-              <li>
-                <a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Education</a>
-              </li>
-              <li>
-                <a href="#project-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
-              </li>
-              <li>
-                <a href="#form-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Question?</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li>
-                  <a><span class="icon icon-phone"></span><span class="text">+91 7875494909</span></a>
-                </li>
-                <li>
-                  <a href=""><span class="icon icon-envelope"></span><span class="text">gadgeathu07@gmail.com</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <i class="icon-heart color-danger" aria-hidden="true"></i>
-          <i class="icon-heart color-danger" aria-hidden="true"></i>
-          <p class="mt-5">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script> <br>
-            Made by gadge@tharva
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home-section">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hey! I am</p>
+          <h1>Atharva Gadge</h1>
+          <p class="hero-lead">
+            I like <span class="hero-rotator" data-roles="Coding.|Data Science.|Machine Learning.|Data Analytics.|Web Development.">Coding.</span>
           </p>
+          <p class="hero-description">
+            An IT student building a strong foundation in data science, machine learning, analytics, and web development through practical projects and continuous learning.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#project-section">View Projects</a>
+            <a class="button button-secondary" href="#contact-section">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-shell">
+            <div class="portrait-frame">
+              <div class="portrait-ring" aria-hidden="true"></div>
+              <img src="main.png" alt="Portrait of Atharva Gadge" width="1024" height="1536" fetchpriority="high">
+            </div>
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              Open to Work
+            </div>
+          </div>
+          <div class="hero-highlights" aria-label="Quick details">
+            <div class="highlight-card">
+              <span class="highlight-label">Focus</span>
+              <strong>Data Science & ML</strong>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-label">Location</span>
+              <strong>Maharashtra, India</strong>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <section class="section section-surface" id="about-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>About Me</h2>
+          <p>Here&apos;s a little about me.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="panel reveal">
+            <p>
+              I am an IT student and a passionate data science and machine learning learner. I enjoy working with data, building machine learning models, and developing web applications.
+            </p>
+            <p>
+              I have skills in Python, data analysis, machine learning, HTML, CSS, JavaScript, PHP, and MySQL. I am always eager to learn new technologies and work on real-world projects to improve my skills.
+            </p>
+            <p>
+              My goal is to become a Data Scientist and Machine Learning Engineer.
+            </p>
+          </article>
+
+          <aside class="panel panel-accent reveal">
+            <ul class="info-list">
+              <li><span>Name</span><strong>Atharva Gadge</strong></li>
+              <li><span>Email</span><a href="mailto:gadgeathu07@gmail.com">gadgeathu07@gmail.com</a></li>
+              <li><span>Phone</span><a href="tel:+917875494909">+91 7875494909</a></li>
+              <li><span>Country</span><strong>India</strong></li>
+            </ul>
+            <button class="button button-secondary button-disabled" type="button" disabled>Download CV</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Resume</p>
+          <h2>Education, Skills & Certifications</h2>
+          <p>A structured snapshot of my academic background, technical strengths, and certifications.</p>
+        </div>
+
+        <nav class="section-nav reveal" aria-label="Resume section navigation">
+          <a href="#education-panel">Education</a>
+          <a href="#skills-panel">Skills</a>
+          <a href="#certifications-panel">Certifications</a>
+        </nav>
+
+        <div class="stack-grid">
+          <section class="panel reveal" id="education-panel">
+            <div class="panel-header">
+              <h3>Education</h3>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Dr. Babasaheb Ambedkar Technological University</h4>
+                  <p class="timeline-meta">Bachelor of Technology</p>
+                  <p><strong>Information Technology</strong></p>
+                  <p>Maharashtra, India</p>
+                  <p class="timeline-date">2023 - 2027 (October)</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></div>
+                <div>
+                  <h4>R.J. Chaware Junior College</h4>
+                  <p class="timeline-meta">Intermediate</p>
+                  <p><strong>Class 11th and 12th</strong></p>
+                  <p>Maharashtra, India</p>
+                  <p class="timeline-date">2021 - 2022</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="panel reveal" id="skills-panel">
+            <div class="panel-header">
+              <h3>Skills</h3>
+            </div>
+            <div class="skill-groups">
+              <article class="skill-card skill-card-green">
+                <div class="skill-card-head">
+                  <h4>Programming & Core</h4>
+                </div>
+                <div class="skill-list">
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>Python</span>
+                      <strong>85%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="85%"></span></div>
+                  </div>
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>SQL</span>
+                      <strong>65%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="65%"></span></div>
+                  </div>
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>Java</span>
+                      <strong>70%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="70%"></span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="skill-card skill-card-blue">
+                <div class="skill-card-head">
+                  <h4>Data Science & ML</h4>
+                </div>
+                <div class="skill-list">
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>Machine Learning</span>
+                      <strong>75%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="75%"></span></div>
+                  </div>
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>Scikit-learn</span>
+                      <strong>70%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="70%"></span></div>
+                  </div>
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>NLP</span>
+                      <strong>60%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="60%"></span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="skill-card skill-card-amber">
+                <div class="skill-card-head">
+                  <h4>Data Tools</h4>
+                </div>
+                <div class="skill-list">
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>Pandas / NumPy</span>
+                      <strong>80%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="80%"></span></div>
+                  </div>
+                  <div class="skill-row">
+                    <div class="skill-title">
+                      <span>Power BI</span>
+                      <strong>80%</strong>
+                    </div>
+                    <div class="progress-track"><span class="progress-fill" data-width="80%"></span></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="panel-header panel-header-spaced">
+              <h3>Technologies</h3>
+            </div>
+            <div class="tech-grid">
+              <figure class="tech-item">
+                <img src="images/skills/numpy.png" alt="NumPy logo" width="44" height="44" loading="lazy">
+                <figcaption>NumPy</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/pandas.png" alt="Pandas logo" width="44" height="44" loading="lazy">
+                <figcaption>Pandas</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/sklearn.png" alt="Scikit-learn logo" width="44" height="44" loading="lazy">
+                <figcaption>Scikit-learn</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/tensor.jpeg" alt="TensorFlow logo" width="44" height="44" loading="lazy">
+                <figcaption>TensorFlow</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/github.png" alt="GitHub logo" width="44" height="44" loading="lazy">
+                <figcaption>GitHub</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/git.png" alt="Git logo" width="44" height="44" loading="lazy">
+                <figcaption>Git</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/html.png" alt="HTML logo" width="44" height="44" loading="lazy">
+                <figcaption>HTML</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/css.png" alt="CSS logo" width="44" height="44" loading="lazy">
+                <figcaption>CSS</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/javascript.png" alt="JavaScript logo" width="44" height="44" loading="lazy">
+                <figcaption>JavaScript</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/bootstrap.png" alt="Bootstrap logo" width="44" height="44" loading="lazy">
+                <figcaption>Bootstrap</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/cplusplus.png" alt="C++ logo" width="44" height="44" loading="lazy">
+                <figcaption>C++</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/c.png" alt="C logo" width="44" height="44" loading="lazy">
+                <figcaption>C</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/linux.png" alt="Linux logo" width="44" height="44" loading="lazy">
+                <figcaption>Linux</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/dart.png" alt="Dart logo" width="44" height="44" loading="lazy">
+                <figcaption>Dart</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/flutter.png" alt="Flutter logo" width="44" height="44" loading="lazy">
+                <figcaption>Flutter</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/java.png" alt="Java logo" width="44" height="44" loading="lazy">
+                <figcaption>Java</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/python.webp" alt="Python logo" width="44" height="44" loading="lazy">
+                <figcaption>Python</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/mysql.png" alt="MySQL logo" width="44" height="44" loading="lazy">
+                <figcaption>MySQL</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/react.png" alt="React logo" width="44" height="44" loading="lazy">
+                <figcaption>React</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/django.png" alt="Django logo" width="44" height="44" loading="lazy">
+                <figcaption>Django</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/docker.png" alt="Docker logo" width="44" height="44" loading="lazy">
+                <figcaption>Docker</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/photoshop.png" alt="Photoshop logo" width="44" height="44" loading="lazy">
+                <figcaption>Photoshop</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/sql.png" alt="SQL logo" width="44" height="44" loading="lazy">
+                <figcaption>SQL</figcaption>
+              </figure>
+              <figure class="tech-item">
+                <img src="images/skills/powerbi.jpeg" alt="Power BI logo" width="44" height="44" loading="lazy">
+                <figcaption>Power BI</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="panel reveal" id="certifications-panel">
+            <div class="panel-header">
+              <h3>Certifications</h3>
+            </div>
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-icon"><i class="fa-solid fa-medal" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Google Data Analytics Certificate</h4>
+                  <p class="timeline-meta">Google</p>
+                  <p><strong>Google Career Certificates</strong></p>
+                  <p class="timeline-date">Nov 2025</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Oracle Certified Professional (Gen AI)</h4>
+                  <p class="timeline-meta">Oracle University</p>
+                  <p><strong>FAST NUCES</strong></p>
+                  <p class="timeline-date">Apr 2025</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Data Analyst 101</h4>
+                  <p class="timeline-meta">Microsoft</p>
+                  <p><strong>SimpliLearn</strong></p>
+                  <p class="timeline-date">Aug 2025</p>
+                </div>
+              </article>
+              <article class="timeline-item">
+                <div class="timeline-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+                <div>
+                  <h4>Foundation Course on IR4.0 Technologies</h4>
+                  <p class="timeline-meta">AICTE</p>
+                  <p><strong>Microsoft and SAP</strong></p>
+                  <p class="timeline-date">2024 - 2025</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="project-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Featured Work</h2>
+          <p>Projects across analytics, machine learning, and web development.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+            <h3>COVID-19 India Data Analysis & Forecasting</h3>
+            <p class="project-stack">Python • Pandas • Folium • Scikit-learn • Plotly</p>
+            <p>
+              A data analytics project that analyzes the spread of COVID-19 across Indian states using real-world data. The system visualizes case density through interactive maps, tracks confirmed, recovered, and death trends, and forecasts future cases using Linear Regression.
+            </p>
+            <a class="project-link" href="https://github.com/gadgeatharva-it/Data-Science-and-Analytics/tree/main/COVID19-Analysis/COVID19-India" target="_blank" rel="noreferrer">View project</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></div>
+            <h3>ML Analysis of E-Commerce Consumer Transactions</h3>
+            <p class="project-stack">Python • Scikit-learn • XGBoost • ARIMA</p>
+            <p>
+              A machine learning research project analyzing e-commerce consumer behavior and sales dynamics. Applied K-Means clustering for customer segmentation, Random Forest and XGBoost for purchase prediction achieving 90%+ accuracy, and ARIMA for sales forecasting. Published as a research paper at DBATU University.
+            </p>
+            <a class="project-link" href="https://github.com/gadgeatharva-it/Data-Science-and-Analytics/tree/main/Ecommerce%20analytics" target="_blank" rel="noreferrer">View project</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></div>
+            <h3>AI Chatbot</h3>
+            <p class="project-stack">HTML • CSS • JavaScript • Web API • NLP</p>
+            <p>
+              An AI chatbot built using API integration that generates intelligent responses to user queries in real time.
+            </p>
+            <a class="project-link" href="https://github.com/gadgeatharva-it/web-development-projects/tree/main/Ai-chatbot" target="_blank" rel="noreferrer">View project</a>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-calculator" aria-hidden="true"></i></div>
+            <h3>Handwritten Equation Solver Using CNN</h3>
+            <p class="project-stack">Python • TensorFlow/Keras • OpenCV • CNN</p>
+            <p>
+              A deep learning based system that recognizes handwritten mathematical equations from images and solves them using a Convolutional Neural Network (CNN). The system processes the image, extracts characters, predicts symbols, and computes the final equation result.
+            </p>
+            <span class="project-note">Project link available on request.</span>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-icon"><i class="fa-solid fa-book" aria-hidden="true"></i></div>
+            <h3>Library Management System</h3>
+            <p class="project-stack">HTML • CSS • JavaScript • PHP • MySQL</p>
+            <p>
+              Manages library books, students, and book issuing system through an admin dashboard. Allows adding books, managing categories, issuing and returning books, and tracking records. Built using PHP and MySQL with a complete login system and database integration.
+            </p>
+            <a class="project-link" href="https://github.com/gadgeatharva-it/web-development-projects/tree/main/lms" target="_blank" rel="noreferrer">View project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Contact Me</h2>
+          <p>Let&apos;s connect about projects, internships, and collaboration opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards">
+            <article class="contact-card reveal">
+              <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+              <h3>Phone</h3>
+              <a href="tel:+917875494909">+91 7875494909</a>
+            </article>
+            <article class="contact-card reveal">
+              <div class="contact-icon"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></div>
+              <h3>Email</h3>
+              <a href="mailto:23030331246023@dbatu.ac.in">23030331246023@dbatu.ac.in</a>
+            </article>
+            <article class="contact-card reveal">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <h3>Location</h3>
+              <p>Maharashtra, India</p>
+            </article>
+          </div>
+
+          <form class="contact-form panel reveal" id="contact-form">
+            <label>
+              <span>Your Name</span>
+              <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+              <span>Your Email</span>
+              <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" placeholder="Message" required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Message</button>
+            <p class="form-note">Submitting opens your default email app with your message pre-filled.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>About</h2>
+        <p>
+          I am a web developer and data science enthusiast who loves building dynamic websites and working with data-driven technologies. I enjoy learning new tools, solving real-world problems, and continuously improving my technical skills.
+        </p>
+        <div class="social-links" aria-label="Social links">
+          <a href="https://github.com/gadgeatharva-it" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/atharva-gadge-03a5b8309/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/atharva.gadge.7773/" target="_blank" rel="noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/gadge_atharva07/" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Links</h2>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#home-section">Home</a>
+          <a href="#about-section">About</a>
+          <a href="#resume-section">Education</a>
+          <a href="#project-section">Projects</a>
+          <a href="#contact-section">Contact</a>
+        </nav>
+      </section>
+
+      <section>
+        <h2>Have a Question?</h2>
+        <div class="footer-contact">
+          <a href="tel:+917875494909"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 7875494909</a>
+          <a href="mailto:gadgeathu07@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> gadgeathu07@gmail.com</a>
+        </div>
+      </section>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>Copyright <span id="current-year"></span> | Made by gadge@tharva</p>
     </div>
   </footer>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen">
-    <svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
-    </svg>
-  </div>
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/app.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      let bars = document.querySelectorAll(".skillbar");
-      bars.forEach(function (bar) {
-        let width = bar.getAttribute("data-width");
-        bar.style.transition = "width 1.5s ease";
-        bar.style.width = width;
-      });
-    });
-  </script>
-  <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxcsq7jJennPW97Pa-lvG4RlTjlxxp5ylryPF9Q-G8r--3TA0MSwjEB9SAHHyl708GR-g/exec";
-    const form = document.forms['submit-to-google-sheet'];
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          alert("Message sent successfully!");
-          form.reset();
-        })
-        .catch(error => {
-          alert("Something went wrong!");
-          console.error(error);
-        });
-    });
-  </script>
 </body>
-
 </html>
