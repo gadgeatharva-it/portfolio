@@ -97,23 +97,32 @@ if (sections.length) {
 }
 
 if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
+  contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const formData = new FormData(contactForm);
-    const name = String(formData.get("name") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const message = String(formData.get("message") || "").trim();
+    formData.set("name", String(formData.get("name") || "").trim());
+    formData.set("email", String(formData.get("email") || "").trim());
+    formData.set("message", String(formData.get("message") || "").trim());
 
-    const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
-    const bodyContent = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      "",
-      "Message:",
-      message
-    ].join("\n");
+    try {
+      const response = await fetch(contactForm.action, {
+        method: contactForm.method || "POST",
+        headers: {
+          Accept: "application/json"
+        },
+        body: formData
+      });
 
-    window.location.href = `mailto:gadgeathu07@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyContent)}`;
+      if (response.ok) {
+        alert("Message sent successfully!");
+        contactForm.reset();
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Something went wrong!");
+    }
   });
 }
