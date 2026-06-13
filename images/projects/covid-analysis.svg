@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title">
+  <title id="title">COVID analytics dashboard preview</title>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <rect x="44" y="44" width="872" height="512" rx="28" fill="#f8fafc"/>
+  <rect x="44" y="44" width="186" height="512" rx="28" fill="#0f172a"/>
+  <rect x="76" y="84" width="92" height="12" rx="6" fill="#f59e0b"/>
+  <rect x="76" y="134" width="122" height="10" rx="5" fill="#64748b"/>
+  <rect x="76" y="172" width="92" height="10" rx="5" fill="#64748b"/>
+  <rect x="76" y="210" width="136" height="10" rx="5" fill="#64748b"/>
+  <rect x="76" y="472" width="134" height="48" rx="12" fill="#1e293b"/>
+  <rect x="272" y="86" width="310" height="34" rx="10" fill="#0f172a"/>
+  <rect x="272" y="148" width="180" height="100" rx="18" fill="#e0f2fe"/>
+  <rect x="484" y="148" width="180" height="100" rx="18" fill="#fef3c7"/>
+  <rect x="696" y="148" width="180" height="100" rx="18" fill="#dcfce7"/>
+  <path d="M298 360c40-78 90-38 132-76 56-51 98-62 166-20 62 38 128 18 204 88" fill="none" stroke="url(#accent)" stroke-width="16" stroke-linecap="round"/>
+  <path d="M300 430h540" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M300 392h540" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M300 354h540" stroke="#cbd5e1" stroke-width="2"/>
+  <circle cx="598" cy="260" r="86" fill="#0f172a"/>
+  <path d="M554 260a44 44 0 1 0 88 0a44 44 0 1 0-88 0" fill="#38bdf8" opacity=".9"/>
+  <path d="M598 174a86 86 0 0 1 76 126l-76-40z" fill="#f59e0b"/>
+</svg>
